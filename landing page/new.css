@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    /* padding: 10px; */
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px!important;
+    padding: 15px 25px;
+  }
+  a:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+  }
+  
+  #hero {
+    background-image: url("https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  #hero h1 {
+    font-size: 5em;
+    color: rgb(15, 158, 113);
+    animation: light 2s linear infinite;
+    /* transition:all 0.5s ease !important; */
+}
+  @keyframes light {
+    to{
+        color: blue;
+        transition: 0.3s;
+        text-shadow: 5px 5px 20px rgb(124, 255, 255);
+    }
+    from{
+        color: rgb(255, 255, 255); 
+    }
+  }
+
+#hero p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#hero button{
+    width: 13rem;
+    height: 3rem !important;
+    border: none;
+    background-color: rgb(28, 168, 79);
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase !important;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#hero button:hover{
+    transform: rotateY(-50deg) skew(20deg) perspective(500px);
+    box-shadow:inset 5px 3px 25px rgba(0, 0, 0, 0.208);
+}
+
+.testimonial{
+    background-color: rgb(8, 148, 148);
+    min-height: 15vh;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+#features{
+    background-color: aquamarine;
+    background-image: linear-gradient(to right, gray,white);
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 50px;
+}
+
+h2{
+    font-size: 30px !important;
+}
+
+footer{
+    background-color: black;
+    height: 15vh;
+    color: white;
+    
+}
+
+footer p{
+    margin: 0 auto;
+}
